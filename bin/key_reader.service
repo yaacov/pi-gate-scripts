@@ -1,0 +1,14 @@
+[Unit]
+Description=Key reader service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=pi
+ExecStart=/usr/bin/env python /home/pi/bin/key_reader.py
+
+[Install]
+WantedBy=multi-user.target
