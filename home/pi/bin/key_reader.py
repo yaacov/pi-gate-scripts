@@ -4,7 +4,7 @@ import requests
 from evdev import InputDevice, KeyEvent, categorize, ecodes, events
 
 # URL for openning latch.
-lock_url = 'http://192.168.1.244:8000/latch/open'
+lock_url = 'http://127.0.0.1:8000/latch/open'
 
 # Path to keyboard device.
 device_path = '/dev/input/by-id/usb-CHESEN_PS2_to_USB_Converter-event-kbd'
