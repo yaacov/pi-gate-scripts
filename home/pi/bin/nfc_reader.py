@@ -5,7 +5,7 @@ from time import sleep
 from pirc522 import RFID
 
 # URL for openning latch.
-lock_url = 'http://192.168.1.244:8000/latch/open'
+lock_url = 'http://127.0.0.1:8000/latch/open'
 
 # Init NFC reader.
 rdr = RFID()
